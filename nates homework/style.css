@@ -1,0 +1,311 @@
+/*CSS for Dad's Version */
+
+/*color
+background: #3c75a3;    dark blue
+color: #236699; blue for h3's
+color: 47B5C3; light-blue
+background: #4f87b4;  blue button
+background: #ed790c;  orange button
+background: #60cdde; super light blue for button3
+color: #d72626;    red for red class
+color: #474747; h1 font color
+color: #00c0dd;   phone number
+color: #6d6d6d;  hours and days of operation
+color: #0087dd;  blue border towards bottom
+
+
+*/
+
+* {
+  padding:0;
+  margin:0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+  font-size: 100%;
+  font-family: 'Roboto', arial, sans-serif;
+  background: #eee;
+}
+
+.wrapper {
+  width: 970px;
+  height: 100%;
+  margin: 0 auto;
+}
+#head-cont {
+  position: relative;
+}
+#header {
+  background: #fff;
+  padding-top: 20px;
+
+}
+#header2 {
+  height: 60px;
+  line-height: 60px;
+  background: #4279A3;
+  clear: both;
+}
+
+#header h1 {
+  font-size: 3.375em;
+  font-weight:300;
+  margin-left: 100px;
+  color: #474747;
+
+}
+#header h1 .blue {
+  color: #236699;
+}
+#header2 h2 {
+  color:#fff;
+  font-size: 2.25em;
+  font-weight: 300;
+  padding-left: 10px;
+
+}
+#head-cont img {
+  height: 100px;
+  position: absolute; top:5px;
+}
+
+
+aside {
+  width: 200px;
+  height: 600px;
+  float: left;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+main {
+  width: 740px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+
+article {
+  clear: both;
+  width: 100%;
+  line-height: 1.2em;
+  padding: 5px 0;
+  font-size: 95%;
+}
+
+
+.hbox-r {
+  float: right;
+  width: 48%;
+    padding-right: 10px;
+    position: relative;
+}
+
+.hbox-l {
+  float: left;
+  width: 45%;
+}
+
+
+
+header#main-head {
+
+  height: 68px;;
+  border-bottom: 1px solid #6d6d6d;
+
+}
+#contact ul {
+  float: right;
+  list-style: none;
+  width: 200px;
+  text-align: right;
+
+}
+
+li.li-small {
+  font-size: .8em;
+  list-style: none;
+  color: #6d6d6d;
+}
+
+li.phone-number {
+  font-size: 2em;
+  color: #00c0dd;
+  font-weight: bold;
+}
+
+#dns-house {
+  padding-top: 5px;
+  margin-right: 5px;
+}
+.hbox-l p {
+  width: 80%;
+  padding-top: 5px;
+  margin-left: 30px;
+  color: #236699;
+}
+
+#dns-house img{
+  width: 25px;
+  display: block;
+  float: left;
+}
+p.hbox-l {
+  margin-left: 10px;
+}
+
+#phone-img img {
+  width: 50px;
+  display: block;
+}
+
+#phone-img {
+  display: block;
+  float: left;
+  margin:10px 0 0 90px;}
+
+
+
+
+#button2, #button1 {
+  width: 100%;
+  height: 20px;
+  color: #fff;
+}
+
+#button3 {
+  width: 90%;
+  height: 20px;
+  background: #47B5C3;
+  color: #fff;
+  margin:0 auto;
+}
+aside h3,
+aside p {
+  margin-bottom: .5em;
+  padding-left: 2px;
+}
+aside p {
+  margin-bottom: 1em;
+}
+aside a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+#button1, #button2,#button3 {
+height: 35px;
+line-height: 35px;
+text-align: center;
+color: #fff;
+border-radius: 6px;
+box-shadow: 3px 3px 3px #666;
+}
+#button1 {
+  background: #4f87b4;
+}
+#button2 {
+
+  background: #ed790c;
+}
+
+div#ninja {
+  background: url(images/ad_background.png) no-repeat;
+  background-size: cover;
+  width: auto;
+  border:1px solid #666;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #666;
+
+
+
+}
+#ninja {
+  color: #fff;
+  text-align: center;
+  padding: 20px 5px;
+  width: 100%;
+
+}
+div#aside-border {
+  border-bottom: 1px solid #666;
+
+}
+#ninja img{
+  width: 100px;
+}
+
+
+
+
+.clear {
+  clear: both;
+}
+article h3,
+footer h3{
+  margin-bottom: .4em;
+  color: #236699;
+}
+
+article p,
+footer p {
+  margin-bottom: .6em;
+}
+img#server-client {
+  width: 35%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0;
+  margin-bottom: .5em;
+}
+article ul, ol {
+  margin-left:40px;
+}
+article ul li,
+article ol li {
+  margin-bottom: .5em;
+}
+article ul ol {
+
+}
+footer {
+  height: 100px;
+  border: 5px solid #0086D9;
+  padding: 8px 8px 8px 8px;
+  clear: both;
+}
+#box {
+  width: 20%;
+  float: left;
+  height: 100%;
+  background: url(images/html.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+#box2 {
+  width: 80%;
+  float:right;
+  line-height: 1em;
+}
+
+
+
+.red {
+  color: #d72626;
+}
+
+.light-blue {
+color: #47B5C3;
+}
+
+.blue {
+  color: #3c75a3;
+  font-weight: bold;
+}
