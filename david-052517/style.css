@@ -1,0 +1,591 @@
+  /*Style Sheet for HTML CSS  Current version 05252017*/
+  /*http://www.modularscale.com/?1&em&1.25*/
+    /*Above link takes us to the modular scale*/
+
+        /*Color Codes*/
+  /*
+  color: #F719A9;	/* hot pink */
+
+  /*
+  color: #01b6be; /* medium turquoise */
+
+  /*
+  color: #00eaf5; /*bright turquoise
+  color: rgba(0,234,245,.9); used in header and footer*/
+
+  /*
+  color: #9fa5a5; /*pale gray */
+
+  /*
+  color: #343a42; /* dark gray */
+
+
+  /****************** FOR DEVO ONLY *****************/
+  span.line-length {
+      color: red;
+  }
+
+/*
+  body {
+     background-image: url(images/bg-940-grid.jpg);
+     background-repeat: repeat-y;
+     background-position: 50%;
+  }
+  */
+
+  /*
+  header, footer, nav, main, aside, div {
+  	border: 1px solid red;
+  }
+  */
+
+  /*
+  .wrapper {
+    border: 1px solid blue;
+  }
+  */
+
+/****************** END DEVO ONLY *****************/
+
+  /**** RESETS ****/
+  body, body * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;	/* declared width = rendered width */
+  }
+
+  a img {
+  	border: 0;	/* remove border from linked images in IE */
+  }
+
+  nav ul,
+  nav li,
+  nav ul ul {
+    position: static;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /**** Font Styles ****/
+  html {
+    font-size: 16px;    /*1 rem=16px    the root size*/
+  }
+  body {
+    font-size: 100%;    /*1em = 16px*/
+    font-family: Helvetica, 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;   /*Always used unitless line-height. Generally speaking, stay between 1.3-1.6*/
+
+  }
+
+  /**** Link Styles ****/
+  a:link,
+  a:visited {
+    color:#888;
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus {
+    color:#444;
+    text-decoration: none;
+  }
+
+
+
+  #header h1 a:link,
+  #header h1 a:visited {
+      color:#000;
+      text-decoration: none;
+  }
+
+  #header h1 a:hover,
+  #header h1 a:focus {
+      color: #F719A9;	/* hot pink */
+  }
+
+  /**** NAVIGATION ****/
+  /**** Main Nav****/
+  #nav-main {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1100;
+
+  }
+
+  #nav-main li {
+    float: left;
+    position: relative;
+    }
+
+  #nav-main li ul {
+    position: absolute;
+    z-index: 1000;
+    top:1.7em;
+    margin-left: 1.5em;
+    width: 10em;
+    background-color: #01b6be;
+    border: 1px solid #000;
+    border-top: 0;
+    left: 999em; /*positive offset moves to the right*/
+  }
+
+  #nav-main li li {
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+
+  #nav-main li:hover ul,
+  #nav-main li:focus ul {
+    left: auto;
+  }
+
+  #nav-main a:link,
+  #nav-main a:visited {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: .25em 1em;
+  }
+
+  #nav-main a:hover,
+  #nav-main a:focus {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /**** Social Nav ****/
+  #nav-social {
+    clear: both;
+    float: right;
+    margin-top: 1.8em;
+  }
+
+  #nav-social li {
+    float: left;
+    }
+
+#nav-social a:link,
+#nav-social a:visited {
+    display: block;
+    padding: 0 12px;
+    color:#666;
+}
+
+#nav-social a:hover,
+#nav-social a:focus {
+  color:#f719a9;
+}
+
+.hidden {
+  position: absolute;
+  left:999em;
+  overflow: hidden;
+}
+
+  /**** Sub Nav ****/
+  #nav-sub ul {
+    border-bottom: 1px solid #666;
+  }
+
+  #nav-sub li {
+    position: relative; /*set psitioning context for nested list in nav-sub*/
+  }
+
+  #nav-sub li ul {
+    position: absolute;
+    z-index: 1000;
+    top: 2.5em;
+    margin-left: 3em;
+    left: -9999em;
+    width: 100%;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+  }
+
+  #nav-sub li:hover ul,
+  #nav-sub li:focus ul {
+    left: auto; /*brings the sub nav menu back*/
+  }
+
+  #nav-sub li ul a:link,
+  #nav-sub li ul a:visited {
+    background-color: #01b6be;
+  }
+
+  #nav-sub li ul a:hover {
+    background-color: #000;
+  }
+
+  #nav-sub a:link,
+  #nav-sub a:visited {
+    background-color: #00eaf5; /*bright turquoise*/
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: .75em;
+    border-top: 1px solid #666;
+  }
+
+  #nav-sub a:hover,
+  #nav-sub a:focus {
+    background: #000;
+    color: #fff;
+  }
+
+/**** Table  ****/
+
+table {
+  border: 1px solid #343a42;
+  width: 100%;
+  margin-bottom: .8em;
+  border-collapse: collapse;
+
+
+}
+thead {
+  color:#fff;
+  background-color: #343a42;
+
+}
+tr {
+  border-top: 1px solid #9fa5a5;
+}
+
+td, th {
+  padding: .5em;
+  text-align: left;
+}
+td {
+  vertical-align: top;
+}
+th {
+  vertical-align: bottom;
+}
+
+
+  /**** Footer Navigation ****/
+
+
+#nav-foot li {
+  list-style: none;
+  float: left;
+  padding-right: 1.25em;
+  margin-right: 1.25em;
+  border-right: 1px solid #666;
+}
+
+#footer li.last {
+  margin-right:0;
+  border: 0;
+}
+#footer a:visited,
+#footer a:link {
+  text-decoration: none;
+  color: #666;
+
+}
+
+#footer a:hover,
+#footer a:focus {
+  text-decoration: underline;
+
+}
+  /**** Text Styles ****/
+  h2 {
+    font-size: 2.441em;
+    font-weight: normal;
+    font-weight: 400;
+    }
+
+  h3 {
+    font-size: 1.563em;
+    font-weight: normal;
+    font-weight: 400;
+    margin-bottom: .262em;
+  }
+
+  p, ul, ol dl {
+    margin-bottom: .8em;
+  }
+
+  /**** lists indents ****/
+  ul {
+    position:relative;
+    left:1.2em;
+    padding-right: 1.2em;  /*padding maches left offset*/
+  }
+
+  ol {
+    position:relative;
+    left:2.25em;
+    padding-right: 2.25em;  /*padding maches left offset*/
+  }
+
+  li, dd {
+    margin-bottom: 0.41em;
+    line-height: 1.45;
+  }
+
+  /**** Nested Lists ****/
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    padding-right: 2em;
+    left:2em;
+  }
+
+  /**** Layout Styles ****/
+  .wrapper {
+  	width: 940px;
+  	margin: 0 auto;
+    overflow: hidden; /*because its contents are floated*/
+    position: relative;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  #header .wrapper  {
+    padding: 10px 0;
+    overflow: visible;
+    position: relative;
+    height: 90px;
+  }
+
+  #logo {
+    width: 70px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  #header h1 {
+    width: 48%;
+    float: left;
+    margin-right: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: normal; /*Fallback Font*/
+    font-weight: 200;
+    line-height: 1.3em;
+    margin-top: .25em;
+    letter-spacing: .1em;
+    text-shadow: 2px 2px 3px #666;
+  }
+
+  #spotlight {
+    position: relative;
+    background-image: url(images/cliff.jpg);
+
+    height: 150px;
+    top:90px;  /*THis value needs to match middle div*/
+    }
+
+  #middle {
+    margin-top: 90px;
+  }
+
+  #primary {
+    width: 220px;
+    float: left;
+    padding-top: 2em;
+  }
+
+  #container {
+    width: 700px;
+    float: right;
+  	overflow: hidden;/*because its contents are floted*/
+  }
+
+  #content {
+  	width: 460px;
+  	float: left;
+  }
+
+  #secondary {
+  	width: 220px;
+  	float: right;
+    padding-top: 2em;
+  }
+
+  #footer, #header {
+    background: #00eaf5; /*this is a fallback color*/
+    background: rgba(0,234,245,.9);
+
+  }
+
+  #footer {
+    clear: both;
+    min-height: 60px;
+    padding: 1.25em 0;
+
+  }
+
+  /**** Misc Styles ****/
+  .floatleft {
+    float: left !important /*Important overrides ID selectors, which are more specific than class*/
+  }
+
+  .floatright {
+    float: right !important;
+  }
+
+  .floatnone {
+    float:none !important;
+  }
+
+  .alignleft {
+    float: left !important;
+    margin: .65em .65em .65em 0; /*TRBL*/
+  }
+
+  .alignright {
+    float: right !important;
+    margin: .65em 0 .65em .65em; /*TRBL*/
+  }
+
+  .alignnone {
+    margin-bottom: 0.65em;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"]
+{
+  width: 100%;
+  line-height: 2em;
+  font-size: 1.5em;
+  padding: .25em;
+}
+
+
+textarea {
+  width: 100%;
+  padding: .5em;
+  font-family: 'open sans', helvetica, arial, sans-serif;
+}
+select {
+  font-size: 1em;
+}
+
+
+input[type="checkbox"],
+input[type="radio"]{
+margin-right: 1em;
+transform: scale(1.2);
+}
+
+p input[type="checkbox"],
+p input[type="radio"]{
+margin-left: .5em;
+}
+
+fieldset {
+  padding: .75em;
+  margin-bottom: 2em;
+  background: #9fa5a5;
+  box-shadow: 5px 5px 5px #01b6be;
+}
+
+ legend {
+  font-size: 2.5em;
+  color:#01b6be;
+  text-shadow: 5px 5px 5px #000;
+
+}
+legend {
+  padding: .5em;
+  font-weight: bold;
+}
+
+
+input[type="submit"]{
+float: right;
+  background: #666;
+  color:#fff;
+  width: 70px;
+  height: 20px;
+}
+#submit:hover {
+  background-color: #01b6be;
+}
+select:hover
+{
+  background: #01b6be;
+}
+
+textarea {
+  background-color: #ccc;
+  font-size: 1.5em;
+  color:red;
+  z-index: 1000;
+
+}
+
+form {
+
+
+}
+
+
+/*Media CSS*/
+#content h2 {
+  text-align: center;
+}
+
+#vid-wrapper, #map {
+  border-style: outset;
+  border: 5px outset #01b6be;
+  margin-bottom: 20px;
+}
+
+iframe {
+  display: block;
+
+}
+
+#music li {
+  list-style: none;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#music li:hover,
+#music li:active,
+#music li:focus
+
+ {
+  color:#01b6be;
+  background: #666;
+
+}
+#music li {
+  display: block;
+  padding: 7px;
+  background: #666;
+
+}
+
+ li:hover source,
+ li:active source,
+ li:focus source
+
+ {
+  color:#01b6be;
+  background: #666;
+}

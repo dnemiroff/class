@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML/CSS2 Main Project David Nemiroff</title>
+  <!-- Makes it possible to load rollover script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--load jquery for image rollovers-->
+<!-- Image Rollover Script -->
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $("img.rollover").hover(
+      function() { this.src = this.src.replace("_off", "_on");
+      },
+      function() { this.src = this.src.replace("_on", "_off");
+      });
+      });
+  </script>
+<!-- END Image Rollover Script -->
+<!-- Remy Sharp Shim -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+<!--Load Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+  <header id="header">
+    <div class="wrapper">
+      <nav id="nav-main">
+        <ul>
+          <li><a href="javascript:;">About</a>
+            <UL>
+              <li><a href="javascript:;">Our Board</a></li>
+              <li><a href="javascript:;">Our Staff</a></li>
+              <li><a href="javascript:;">Our Volunteers</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="volunteer.html">Volunteer</a>
+              <ul>
+                <li><a href="javascript:;">Community</a></li>
+                <li><a href="javascript:;">Outreach</a></li>
+                <li><a href="javascript:;">Building</a></li>
+                <li><a href="javascript:;">Office Support</a></li>
+                <li><a href="javascript:;">Human Resources</a></li>
+              </ul>
+          </li>
+          <li><a href="javascript:;">Donate</a></li>
+          <li><a href="javascript:;">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="nav-social">
+        <ul>
+           <li><a href="javascript:;"><i class="fa fa-facebook fa-lg"><span class="hidden">Facebook</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-twitter fa-lg"><span class="hidden">Twitter</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-google-plus fa-lg"><span class="hidden">Google Plus</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-whatsapp fa-lg"><span class="hidden">Whats App</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-envelope-o fa-lg"><span class="hidden">Email</span></i></a></li>
+        </ul>
+      </nav>
+
+      <a href="javascript:;">
+        <img id="logo" src="images/logo_off.png" alt="logo" class="rollover" />
+      </a>
+
+      <h1><a href="javascript:;">Company Name</a></h1>
+  </div><!-- /.wrapper -->
+
+</header>
+
+<div id="spotlight">
+  <p>This is the Spotlight Div</p>
+</div><!-- /#spotlight -->
+
+<div id="middle" class="wrapper">
+
+
+  <div id="container">
+
+  <main id="content">
+
+        <h2>Thank you</h2>
+        <p>Thank you for your interest in volunteerig with us. We will get back to you within two days, not including weekends.</p>
+
+  <form action="formhandler.php" method="post">
+  <fieldset>
+    <legend>Become a Volunteer</legend>
+
+
+
+      <p><label for="name">Name</label>
+        <input type="text" name="name"  id="name" /></p>
+
+        <p><label for="email">Email <i>(required)</i></label>
+        <input type="email" name="email" id="email" required /></p>
+
+
+        <p><label for="message">Message</label>
+          <textarea name="message" rows="4" cols="25" id="message"></textarea></p>
+
+          <p>How did you hear about us?
+          <label><input type="checkbox" name="source[]" id="source" value="friend">Friend</label>
+          <label><input type="checkbox" name="source[]" id="source" value="internet">Internet Search</label>
+          <label><input type="checkbox" name="source[]" id="source" value="event">Event</label></p>
+
+          <p><label><input type="checkbox" name="mailing" id="mailing" value="yes" />Add me to your mailing list</label></p>
+
+
+          <p>How often would you like to get emails from us?
+          <label><input type="radio" name="frequency" id="daily" value="daily">Daily</label>
+          <label><input type="radio" name="frequency" id="weekly" value="weekly">Weekly</label>
+          <label><input type="radio" name="frequency" id="monthly" value="monthly">Monthly</label>
+          <label><input type="radio" name="frequency" id="never" value="never">Never</label></p>
+
+
+          <p><label>What is your interest in our organization</label>
+            <select name="interest" size="1" id="interest">
+              <option value="#">Choose One</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="client">Client</option>
+              <option value="donor">Donor</option>
+              <option value="other">Other</option></selection></p>
+
+
+
+          <input type="submit" value="Send" id="submit">
+        </fieldset>
+
+  </form>
+
+
+  </main>
+
+
+</div><!-- /#container -->
+</div><!-- /#middle, .wrapper  -->
+
+  <footer id="footer">
+
+    <nav id="nav-foot" class="wrapper">
+       <ul>
+          <li>&copy; 2017 <a href="javascript:;">David Nemiroff</a></li>
+          <li><a href="javascript:;">Photo Credits</a></li>
+          <li><a href="javascript:;">Privacy Policy</a></li>
+          <li><a href="javascript:;">Terms of Use</a></li>
+          <li><a href="javascript:;">Site Map</a></li>
+          <li class="last"><a href="javascript:;">Contact</a></li>
+       </ul>
+    </nav>
+  </footer>
+
+  <!-- begin validation buttons -->
+<p class="valid">
+ <a href="http://validator.w3.org/check?uri=referer">
+  <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+  width="31" height="32" alt="valid HTML5" />
+ </a>
+ <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+  <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+   alt="Valid CSS3" height="31" width="88" />
+ </a>
+</p>
+<!-- end validation buttons -->
+
+
+
+</body>
+</html>

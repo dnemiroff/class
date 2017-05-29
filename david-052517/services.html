@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services</title>
+  <!-- Makes it possible to load rollover script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--load jquery for image rollovers-->
+<!-- Image Rollover Script -->
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $("img.rollover").hover(
+      function() { this.src = this.src.replace("_off", "_on");
+      },
+      function() { this.src = this.src.replace("_on", "_off");
+      });
+      });
+  </script>
+<!-- END Image Rollover Script -->
+<!-- Remy Sharp Shim -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+<!--Load Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+  <header id="header">
+    <div class="wrapper">
+      <nav id="nav-main">
+        <ul>
+          <li><a href="index.html">About</a>
+            <UL>
+              <li><a href="javascript:;">Our Board</a></li>
+              <li><a href="javascript:;">Our Staff</a></li>
+              <li><a href="volunteer.html">Our Volunteers</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="volunteer.html">Volunteer</a>
+              <ul>
+                <li><a href="javascript:;">Community</a></li>
+                <li><a href="javascript:;">Outreach</a></li>
+                <li><a href="javascript:;">Building</a></li>
+                <li><a href="javascript:;">Office Support</a></li>
+                <li><a href="javascript:;">Human Resources</a></li>
+              </ul>
+          </li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="nav-social">
+        <ul>
+           <li><a href="javascript:;"><i class="fa fa-facebook fa-lg"><span class="hidden">Facebook</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-twitter fa-lg"><span class="hidden">Twitter</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-google-plus fa-lg"><span class="hidden">Google Plus</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-whatsapp fa-lg"><span class="hidden">Whats App</span></i></a></li>
+
+           <li><a href="javascript:;"><i class="fa fa-envelope-o fa-lg"><span class="hidden">Email</span></i></a></li>
+        </ul>
+      </nav>
+
+      <a href="javascript:;">
+        <img id="logo" src="images/logo_off.png" alt="logo" class="rollover" />
+      </a>
+
+      <h1><a href="javascript:;">Company Name</a></h1>
+  </div><!-- /.wrapper -->
+
+</header>
+
+<div id="spotlight">
+  <p>This is the Spotlight Div</p>
+</div><!-- /#spotlight -->
+
+<div id="middle" class="wrapper">
+
+  <aside id="primary">
+
+        <h3>Primary Sidebar</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet. </li>
+          <li>Consectetur adipiscing elit.</li>
+          <li>In eu turpis at lectus molestie pulvinar.</li>
+          <li>Maecenas in libero nec ante imperdiet iaculis.</li>
+          <li>Etiam mollis leo a eros ornare id aliquet justo luctus.</li>
+          <li>Sed nec mi ac mauris pretium gravida vel gravida tortor.</li>
+          <li>Sed vitae ante diam, a cursus massa.</li>
+          <li>Nullam vel tortor justo, vitae vulputate sem.</li>
+        </ul>
+
+
+  </aside>
+
+  <div id="container">
+
+  <main id="content">
+    <h2>Rush Tom Sawyer</h2>
+    <div id="vid-wrapper">
+
+          <iframe width="450" height="255" src="https://www.youtube.com/embed/WJoTxywiRG0"  allowfullscreen></iframe>
+    </div><!--end vid-wrapper-->
+
+        <p>For ease of reading, the longest line on a <span class="line-length">* web page should be between *</span> 45 and 75 characters in length. Use this paragraph to test the line length on your page, and adjust your column widths as needed.</p>
+  <h3>Events</h3>
+
+        <p>Bellevue College North Campus loves RUSH!</p>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.563106455492!2d-122.1475983843488!3d47.63462327918668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906cc4deccd05f%3A0xfc8443339f83ee7d!2sBellevue+College+North+Campus!5e0!3m2!1sen!2sus!4v1495756218540" width="450" height="400"  allowfullscreen></iframe>
+    </div><!--End Map Div-->
+
+
+
+
+  </main>
+
+  <aside id="secondary">
+        <h3>Other Great Songs</h3>
+
+
+
+
+        <ul id="music">
+          <li>21 Guns<audio controls><source src="music/21-guns.mp3" type="audio/mpeg"></audio></li>
+
+          <li>Welcome to NY<audio controls><source src="music/taylor.mp3" type="audio/mpeg"></audio></li>
+
+          <li>That's Christmas to me<audio controls><source src="music/ptx.mp3" type="audio/mpeg"></audio></li>
+
+          <li>We weren't born to follow<audio controls><source src="music/bon.mp3" type="audio/mpeg"></audio></li>
+
+
+        </ul>
+  </aside>
+</div><!-- /#container -->
+</div><!-- /#middle, .wrapper  -->
+
+  <footer id="footer">
+
+    <nav id="nav-foot" class="wrapper">
+       <ul>
+          <li>&copy; 2017 <a href="javascript:;">David Nemiroff</a></li>
+          <li><a href="javascript:;">Photo Credits</a></li>
+          <li><a href="javascript:;">Privacy Policy</a></li>
+          <li><a href="javascript:;">Terms of Use</a></li>
+          <li><a href="javascript:;">Site Map</a></li>
+          <li class="last"><a href="javascript:;">Contact</a></li>
+       </ul>
+    </nav>
+  </footer>
+
+  <!-- begin validation buttons -->
+<p class="valid">
+ <a href="http://validator.w3.org/check?uri=referer">
+  <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+  width="31" height="32" alt="valid HTML5" />
+ </a>
+ <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+  <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+   alt="Valid CSS3" height="31" width="88" />
+ </a>
+</p>
+<!-- end validation buttons -->
+
+
+
+</body>
+</html>
